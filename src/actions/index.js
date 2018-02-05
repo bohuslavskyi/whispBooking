@@ -12,20 +12,12 @@ import {GET_DASHBOARD_ERROR} from '../consts/consts';
 
 import axios from 'axios';
 
-// export const Hui = () => {
-//     const request = axios.get('https://interview-booking-api.herokuapp.com/api/recent-activity')
-//     return {
-//         type: SMELLS_LIKE_PUSSY,
-//         payload: request
-//     }
-// }
-
 export const getHotelEvents = () => {
         return function (dispatch) {
             dispatch({
                 type: GET_HOTEL_EVENTS_START,
                 payload: {isLoading: true}
-            })
+            });
 
             axios.get('https://interview-booking-api.herokuapp.com/api/recent-activity')
                 .then(function ({data}) {
@@ -41,14 +33,14 @@ export const getHotelEvents = () => {
                     })
                 });
         }
-}
+};
 
 export const getErrivedThisWeek = () => {
     return function (dispatch) {
         dispatch({
             type: GET_ARRIVED_THIS_WEEK_START,
             payload: {isLoading: true}
-        })
+        });
 
         axios.get('https://interview-booking-api.herokuapp.com/api/bookings')
             .then(function ({data}) {
@@ -64,14 +56,14 @@ export const getErrivedThisWeek = () => {
                 })
             });
     }
-}
+};
 
 export const getDashboardTotals = () => {
     return function (dispatch) {
         dispatch({
             type: GET_DASHBOARD_START,
             payload: {isLoading: true}
-        })
+        });
 
         axios.get('https://interview-booking-api.herokuapp.com/api/booking-snapshot')
             .then(function ({data}) {
@@ -87,6 +79,6 @@ export const getDashboardTotals = () => {
                 })
             });
     }
-}
+};
 
 

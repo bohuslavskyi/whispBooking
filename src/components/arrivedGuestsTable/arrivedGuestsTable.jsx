@@ -16,7 +16,7 @@ class ArrivedGuestsTable extends Component {
                             <tbody>
                             {this.props.arrived.data ?
                                 this.props.arrived.data.map((el, i)=>{
-                                if(i<5)return (<ArrivedGuestsItem key={el.id} data={el}/>)
+                                if(i<6)return (<ArrivedGuestsItem key={el.id} data={el}/>)
                             }) : null}
                             </tbody>
                         </table>

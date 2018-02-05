@@ -1,79 +1,83 @@
 @import "../../styles/vars";
 
-.Oval-3{
-  width: 10px;
-  height: 10px;
-  margin-top: 4px;
-  border-radius: 50%;
-  border: solid 2px $algae-green;
+.ovalEvent {
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+    border-radius: 50%;
+    border: solid 2px $algae-green;
 }
 
-.red{
-  border: solid 2px $algae-red;
+.red {
+    border: solid 2px $algae-red;
 }
-.orange{
-  border: solid 2px $algae-yellow;
+
+.orange {
+    border: solid 2px $algae-yellow;
 
 }
 
-.custom-sm-2{
-  width: 10.666667%;
+.custom-sm-2 {
+    width: 10.666667%;
 }
 
-.custom-sm-6{
-  width: 56%;
+.custom-sm-6 {
+    width: 56%;
+    padding-left: 0;
 }
 
-.custom-sm-offset-1{
-  margin-left: 10.9%;
+.custom-sm-offset-1 {
+    margin-left: 10.9%;
 }
 
-.custom-sm-11{
-  width: 89.1%;
+.custom-sm-11 {
+    width: 89.1%;
 }
 
-.justify{
-  padding-top: 4px;
-  text-align: justify;
-}
-.aline{
-  text-align: right;
+.justify {
+    padding-top: 4px;
+    text-align: justify;
 }
 
-.badge{
-  background-color: #28353d;
-  padding: 3px 15px 3px 15px;
-  font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: right;
-  color: $color-steel-grey;
+.aline {
+    padding-right: 10px;
+    text-align: right;
 }
 
-.titleEvents{
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $color-white;
+.badge {
+    background-color: #28353d;
+    padding: 3px 15px 3px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: $color-steel-grey;
 }
 
-.liEvents{
-  position: relative;
-  margin-top: 25px;
+.titleEvents {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $color-white;
 }
 
-.verticalLine{
-  position: absolute;
-  height: 120%;
-  top: 14px;
-  left: 5px;
-  border-left: solid 1px #27323a;
+.liEvents {
+    position: relative;
+    margin-top: 25px;
+    min-height: 45px;
+}
+
+.verticalLine {
+    height: 120%;
+    top: 14px;
+    left: 5px;
+    border-left: solid 1px #27323a;
 }
 

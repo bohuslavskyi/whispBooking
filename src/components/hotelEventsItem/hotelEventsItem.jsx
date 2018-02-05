@@ -1,13 +1,15 @@
 import React, {Component} from 'react'; // const Component = React.Component
 import moment from 'moment';
 import 'moment-timezone';
+import './hotelEventsItem.module.scss';
+
 
 class HotelEventsItem extends Component {
     pickColor = (val) =>{
         switch (val){
-            case 'CHECK_IN' : return 'Oval-3';
-            case 'NEW_EMPLOYEE' : return 'Oval-3 orange';
-            case 'MAINTENANCE' : return 'Oval-3 red';
+            case 'CHECK_IN' : return 'ovalEvent';
+            case 'NEW_EMPLOYEE' : return 'ovalEvent orange';
+            case 'MAINTENANCE' : return 'ovalEvent red';
         }
     }
     render() {
@@ -31,7 +33,7 @@ class HotelEventsItem extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="custom-sm-offset-1 col-sm-11 custom-sm-11 justify">{this.props.data.description}
+                            <div className="custom-sm-offset-1 col-sm-11 custom-sm-11 eventDescription">{this.props.data.description}
                             </div>
                         </div>
                         <div className="verticalLine"></div>

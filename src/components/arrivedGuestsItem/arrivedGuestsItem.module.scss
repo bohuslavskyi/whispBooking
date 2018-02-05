@@ -27,3 +27,8 @@
 .table>tbody>tr>th, .table>tbody>tr>td {
   border-top: solid 1px #29353e;
 }
+
+.table > tbody > tr > td {
+    padding-top: 13px;
+    padding-bottom: 10px;
+}

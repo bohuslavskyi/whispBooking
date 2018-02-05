@@ -22,13 +22,12 @@ class WeekAvailability extends Component {
                     <div className={`${this.ovalColor(this.props.dashboard.data.weekAvailabilityPercent)}`}>
                         <p className="persentValue">{`${this.props.dashboard.data.weekAvailabilityPercent}${'%'}`}</p>
                     </div>
-                </div>
+                </div>;
         return <div>Loading</div>
     }
 }
 
 function mapStateToProps({ReducerDashboard}) {
-    console.log('ReducerDashboard', ReducerDashboard)
     return{
         dashboard:ReducerDashboard
     }

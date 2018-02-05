@@ -1,8 +1,8 @@
 import React from 'react';
 import './header.module.scss';
 
-const Header = () => {
-    return <header className="Rectangle-Copy">
+const Header = (props) => {
+    return <header className="header row">
                 <div className="inline">
                     <p className="booking">
                         BOOKING
