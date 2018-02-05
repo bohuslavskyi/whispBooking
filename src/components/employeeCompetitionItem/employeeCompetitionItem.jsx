@@ -5,6 +5,9 @@ class EmployeeCompetitionItem extends Component {
 
     render() {
 
+        let progresPersent = {
+            width: ((this.props.data.contributions*24)*100)/1000 + '%'
+        };
         return  <li className="employeeItemMarg ">
                 <div className="row width">
                     <div className="col-sm-3 employeeImgPadd">
@@ -23,7 +26,12 @@ class EmployeeCompetitionItem extends Component {
                         </div>
                         <div className="">
                             <div className="progress">
-                                <div className="progress-bar progress-bar-success" style={{"width": "40%"}}  role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" >
+                                <div className="progress-bar progress-bar-success"
+                                     style={progresPersent}
+                                     role="progressbar"
+                                     aria-valuenow={this.props.data.contributions*24}
+                                     aria-valuemin="0"
+                                     aria-valuemax="100" >
                                     <span className="sr-only">40% Complete (success)</span>
                                 </div>
                             </div>
