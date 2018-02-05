@@ -1,0 +1,57 @@
+@import '../../styles/vars';
+
+
+.employeeImg{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.progress{
+  margin-top: 3px;
+  height: 2px;
+}
+
+.employeeStatsBlock{
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.employeeName{
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-white;
+  margin-bottom: 3px;
+}
+
+.employeeHours{
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $color-steel-grey;
+  margin-bottom: 3px;
+}
+
+.employeeImgPadd{
+  padding-left: 0;
+}
+
+.width{
+  padding: 0 15px 0 15px;
+}
+.employeeItemMarg{
+  margin-bottom: 20px;
+}
+.progress-bar{
+  background-color: $algae-green;
+}

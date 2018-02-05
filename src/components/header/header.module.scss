@@ -1,0 +1,36 @@
+.Rectangle-Copy{
+    height: 70px;
+    background-color: #253139;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    position: relative;
+}
+.booking{
+    width: 67px;
+    height: 17px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #87959f;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.User {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}

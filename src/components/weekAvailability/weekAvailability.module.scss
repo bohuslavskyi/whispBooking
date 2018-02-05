@@ -1,0 +1,48 @@
+@import "../../styles/vars";
+
+.weekAvailability{
+  padding-left: 35px;
+}
+
+.Week-availability {
+  margin-bottom: 30px;
+}
+
+.Oval-5{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: solid 3px #ffbe57;
+  position: relative;
+  .persentValue{
+    font-size: 44px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+
+.redOval{
+  border: solid 3px $algae-red;
+  .persentValue{
+    color: $algae-red;
+  }
+
+}
+.yellowOval{
+  border: solid 3px $algae-yellow;
+  .persentValue{
+    color: $algae-yellow;
+  }
+
+}
+.greenOval{
+  border: solid 3px $algae-green;
+  .persentValue{
+    color: $algae-green;
+  }
+
+}
